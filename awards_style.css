@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+  width: 100%;
+  max-height: 100vh;
+  background-image: url('bg1-01.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat-y;
+}
+
+.container {
+  padding:0px;
+  margin: 175px;
+}
+
+
+/*Section One Start*/
+
+/*Navbar Start Section*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right:30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  box-shadow: 3px 3px 5px rgba(73, 197, 114, 0.1);
+  font-family:"Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform:uppercase;
+  z-index:1000;
+  width: 100%;
+}
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: color 0.5s;
+}
+nav a:hover{
+  color: rgb(222, 229, 242);
+  opacity: 0.7;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+nav img{
+  max-width:50px;
+  height:auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  background-color:rgb(53, 83, 133) ;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 -10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+
+.menu-button{
+  display: none;
+}
+
+@media(max-width: 968px){
+  .hideOnMobile{
+    display: none;
+    font-family:"Inter", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .menu-button{
+    display: block;
+  }
+  .sidebar{
+    width:50%;
+  }
+}
+
+.section-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 120px;
+  padding: 20px;
+}
+
+.text_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.section-main h1{
+  color: rgb(222, 229, 242);
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Inter", san-serif;
+  letter-spacing: 1.50px;
+  margin-top: 5px;
+}  
+
+@media(max-width: 968px){
+  .section-main {
+    align-items:center;
+    justify-content:center;
+    flex-direction: column-reverse;
+  }
+  .text_content {
+    max-width: 100%;
+    text-align:center;
+  }
+}
+/*Section One End*/
+
+/*Credits section start*/
+.credits-section{
+  margin-top: 200px;
+  height: auto;
+  width: device-width;
+  /* background-color: rgb(53, 52, 50); */
+  background-color: rgb(53, 52, 50);
+  opacity: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.credits-item{
+  text-align: center;
+  height: 60px;
+  width: auto;
+  min-width: 200px;
+  background-color: transparent;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.credits-item:active{
+  opacity: 0.7;
+}
+a:link {
+  text-decoration: none;
+}
+
+p{
+  margin: 0px;
+  padding:0px;
+  padding-top: 0px;
+  padding-bottom:0px;
+  color: white;
+  text-align: center;
+}
+.text1{
+  width: 1500px;
+  margin: 0px;
+  padding:0px;
+  padding-top: 0px;
+  padding-bottom:0px;
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+}
+.text2{
+  width: 1000px;
+  margin: 0px;
+  padding:0px;
+  padding-top: 0px;
+  padding-bottom:0px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+}
+.text3{
+  width: 1000px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding:0px;
+  padding-top: 0px;
+  padding-bottom:0px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-item{
+  margin: 0px;
+  margin-top: 20px;
+  letter-spacing: 0px;
+}
+@media(max-width:968px){
+  .credits-item{
+    max-width:50%;
+  }
+}
+/*Credits section end*/
