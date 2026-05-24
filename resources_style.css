@@ -26,6 +26,8 @@ body {
 nav {
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   background-color: transparent;
   backdrop-filter: blur(10px);
   list-style-type: none;
@@ -40,7 +42,7 @@ nav {
   font-weight: 300;
   font-style: normal;
   text-transform:uppercase;
-  z-index:1000;
+  z-index:9999;
   width: 100%;
 }
 
@@ -112,9 +114,10 @@ nav img{
   }
   .menu-button{
     display: block;
+    z-index: 10000;
   }
   .sidebar{
-    width:50%;
+    width:60%;
   }
 }
 
@@ -396,6 +399,7 @@ nav img{
   flex-wrap: wrap;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
+  padding: 20px;
 }
 .credits-item{
   text-align: center;
