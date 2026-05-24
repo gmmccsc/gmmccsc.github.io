@@ -149,6 +149,21 @@ nav img {
   justify-content: flex-start;
 }
 
+/* Target only the very first <li> inside the sidebar (the close button) */
+.sidebar li:first-child {
+    padding-top: 25px;       /* Pushes the X down from the top edge */
+    padding-right: 25px;     /* Pushes the X left from the right edge */
+    display: flex;
+    justify-content: flex-end; /* Moves the X to the right side of the screen */
+    box-sizing: border-box;  /* Ensures padding doesn't break layout width */
+}
+
+/* Make sure the close image itself has a reasonable size */
+.sidebar li:first-child img {
+    width: 28px;             /* Adjust this value if you want the X larger or smaller */
+    height: auto;
+}
+
 .sidebar li {
   width: 100%;
 }
